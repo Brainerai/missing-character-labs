@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Missing Character Lab
+
+A fan-made Pattern Retrieval experiment that turns X/Twitter handles into missing ASCII-style specimens.
+
+94 printable specimens were archived. This machine searches for the unstable visitor outside the set.
+
+## What it does
+
+Missing Character Lab lets anyone enter an X handle and generate a unique missing-character specimen.
+
+The site simulates a small retrieval process:
+
+```txt
+store → corrupt → relax → recall
+```
+
+Each handle generates:
+
+* a unique block-grid specimen
+* a missing character identity
+* a specimen number
+* a fun recall/result report
+* a downloadable result card
+* a separate downloadable grid block
+
+The downloaded grid block also contains a hidden payload, so it can be uploaded back into the site and read to recover the original X handle.
+
+## Features
+
+* Handle-based deterministic specimen generation
+* CRT-inspired interface
+* Corruption and recall animation
+* Downloadable result card
+* Downloadable standalone grid block
+* Upload/read grid block to recover the generated subject
+* X/Twitter share button
+
+## Tech Stack
+
+* Next.js
+* React
+* TypeScript
+* CSS
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```txt
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This is a fan-made project created for fun and community engagement.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+It is not affiliated with Pattern Retrieval, Adam Lienich, or any official release.
